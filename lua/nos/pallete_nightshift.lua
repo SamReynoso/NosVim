@@ -4,28 +4,27 @@
 
 
 return {
---    important_green_bg    = "#1a2626",
---    important_red_bg      = "#261a26",
---    important_blue_bg     = "#182032",
---    shit_yellow           = "#383800",
---    nice-purple           = "#20202f",
-
-    bg         = "#0f0303",
-    light_bg   = "#1f1a1a",
-    dark_bg    = "#1d1d22",
-    fg         = "#b1b5bb",
-
-    red        = "#c97a82",
-    red_bg     = "#312428",
-    green      = "#98b27a",
-    green_bg   = "#252d24",
-    yellow     = "#b8aa72",
-    blue       = "#7f8eb3",
-    magenta    = "#a18cb7",
-    cyan       = "#7faaa8",
-
-    change_bg  = "#262933",
-    cursorline = "#1b1b23",
-    comment    = "#686c73",
-    selection  = "#32384a",
+    bg              = "#0e0606", -- forground
+    fg              = "#cacaff", -- background 
+--
+    a1              = "#ef5a50", -- errors
+    a2              = "#af88af", -- Operator
+    a3              = "#66cc66",
+    a4              = "#93d5ff",
+--
+    n1              = "#86b3ff", -- Variable
+    n2              = "#b6b6ff", -- Keyword
+    n5              = "#d163b5", -- classVar, shFunctionExp
+    n6              = "#99d6b2", -- string
+    n7              = "#ffc6bf", -- Repeat
+--
+    m2              = "#ffc6ff", -- Statement
+    m3              = "#83bdbf", -- PreProc
+    m4              = "#98c1ff", -- Function, Delimiter
+    m5              = "#ff99e6", -- Conditional
+    m7              = "#6cae8f", -- Character
+    m9              = "#80b38f", -- Number, Boolean, Constant
+    comment         = "#9b9b9b",
+    cursorline      = "#292929",
+    selection       = "#292929",
 }

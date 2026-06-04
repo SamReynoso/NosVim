@@ -9,9 +9,9 @@ return {
     cmd = "Neotree",
 
 -- Moved this to remaps.lua so It is more easily discoverable
---    keys = {
---        { "<C-e>", "<cmd>Neotree toggle<cr>", desc = "Neo-tree" },
---    },
+    keys = {
+        { "<leader>qw", "<cmd>Neotree toggle<cr>", desc = "Neo-tree" },
+    },
 
     opts = {
         close_if_last_window = true,

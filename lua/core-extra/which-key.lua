@@ -21,6 +21,9 @@ return {
           { "<leader>t", group = "Tabs" },
           { "<leader>u", group = "UI" },
           { "<leader>p", group = "Put" },
+
+          { "<leader>q", group = "Sidebar" },
+
           { "<leader>w", group = "Windows" },
           { "<leader>z", group = "Spell" },
           })

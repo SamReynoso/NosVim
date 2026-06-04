@@ -26,17 +26,27 @@ vim.keymap.set("n", "<C-Down>", "<cmd>resize -5<CR>", { desc = "Height -5" })
 vim.keymap.set("n", "<C-Right>", "<cmd>vertical resize +5<CR>", { desc = "Width +5" })
 
 -- Tabs ------------------------------------------------------------------------
-vim.keymap.set("n", "<leader>tc", "<cmd>tabnew<CR>", { desc = "Next Tab" })
-vim.keymap.set("n", "<leader>tn", "<cmd>tabnext<CR>", { desc = "New Tab" })
+vim.keymap.set("n", "<leader>tt", "<cmd>tabnew<CR>", { desc = "New Tab" })
+vim.keymap.set("n", "<leader>tc", "<cmd>tabnew<CR>", { desc = "Close Tab" })
+vim.keymap.set("n", "<leader>tn", "<cmd>tabnext<CR>", { desc = "Next Tab" })
 vim.keymap.set("n", "<leader>tp", "<cmd>tabprevious<CR>", { desc = "Previous Tab" })
+vim.keymap.set("n", "<leader>to", "<cmd>tabonly<CR>", { desc = "Close Others" })
+vim.keymap.set("n", "<leader>tf", "<cmd>tabfirst<CR>", { desc = "First Tab" })
+vim.keymap.set("n", "<leader>tl", "<cmd>tablast<CR>", { desc = "Last Tab" })
+vim.keymap.set("n", "<leader>tm", "<cmd>tabmove", { desc = "Move Tab" })
 vim.keymap.set("n", "<leader>tl", "<cmd>tabs<CR>", { desc = "List Tabs", })
 
 -- Quickfix --------------------------------------------------------------------
+vim.keymap.set("n", "<leader>ca", "<cmd>caddfile<CR>", { desc = "Add File To Quickfix" })
 vim.keymap.set("n", "<leader>co", "<cmd>copen<CR>", { desc = "Open Quickfix" })
 vim.keymap.set("n", "<leader>cc", "<cmd>cclose<CR>", { desc = "Close Quickfix" })
 vim.keymap.set("n", "<leader>cn", "<cmd>cnext<CR>", { desc = "Next Quickfix" })
 vim.keymap.set("n", "<leader>cp", "<cmd>cprev<CR>", { desc = "Previous Quickfix" })
-vim.keymap.set("n", "<leader>ca", "<cmd>caddfile<CR>", { desc = "Add File To Quickfix" })
+vim.keymap.set("n", "<leader>cf", "<cmd>cfirst<CR>", { desc = "First Quickfix" })
+
+vim.keymap.set("n", "<leader>cll", "<cmd>clast<CR>", { desc = "Last Quickfix" })
+vim.keymap.set("n", "<leader>clc", "<cmd>lopen<CR>", { desc = "Open Local Quickfix" })
+vim.keymap.set("n", "<leader>clp", "<cmd>lprev<CR>", { desc = "Close Local Quickfix" })
 
 -- Spell -----------------------------------------------------------------------
 vim.keymap.set("n", "<leader>zz", "z=", { desc = "Spell Suggestions", })
@@ -57,39 +67,38 @@ vim.keymap.set("v", "p", "_dP", { desc = "Paste Without Yanking" })
 
 -- Insert Mode -----------------------------------------------------------------
 -- vim.keymap.set("i", "<C-c>", "<cmd>PickColorInsert<cr>", opts)
--- I miss this plug in 
+-- I miss this plug-in 
+
 -- FZF -------------------------------------------------------------------------
 -- vim.keymap.set("n", "<leader>ff", "<cmd>FzfLua files<CR>", { desc = "Find Files" })
 -- vim.keymap.set("n", "<leader>fg", "<cmd>FzfLua live_grep<CR>", { desc = "Live Grep" })
 -- vim.keymap.set("n", "<leader>fb", "<cmd>FzfLua buffers<CR>", { desc = "Find Buffers" })
 -- vim.keymap.set("n", "<leader>fr", "<cmd>FzfLua oldfiles<CR>", { desc = "Recent Files" })
+
 -- Buffers ---------------------------------------------------------------------
 vim.keymap.set("n", "<S-h>", "<cmd>BufferLineCyclePrev<CR>", { desc = "Previous Buffer", })
 vim.keymap.set("n", "<S-l>", "<cmd>BufferLineCycleNext<CR>", { desc = "Next Buffer" })
--- UndoTree --------------------------------------------------------------------
-vim.keymap.set("n", "C-_", "<cmd>UndotreeToggle<CR>", { desc = "Undeo Tree" })
 
-vim.keymap.set("n", "<C-e>", "<cmd>Neotree toggle<CR>", { desc = "File Tree" })
 vim.keymap.set("n", "]h", "<cmd>GitSigns next_hunk<CR>", { desc = "Next Hunk" })
 vim.keymap.set("n", "[h", "<cmd>Gitsigns prev_hunk<CR>", { desc = "Prev Hunk" })
 
-vim.keymap.set(
-    "n",
-    "s",
-    function()
-        require("flash").jump()
-    end,
-    { desc = "Prev Hunk" }
-)
-
-vim.keymap.set(
-    "n", "S",
-    function()
-        require("flash").treesitter()
-    end,
-    { desc = "Prev Hunk" }
-)
-
+-- vim.keymap.set(
+--     "n",
+--     "s",
+--     function()
+--         require("flash").jump()
+--     end,
+--     { desc = "Prev Hunk" }
+-- )
+-- 
+-- vim.keymap.set(
+--     "n", "S",
+--     function()
+--         require("flash").treesitter()
+--     end,
+--     { desc = "Prev Hunk" }
+-- )
+-- 
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
