@@ -52,6 +52,9 @@ vim.keymap.set("n", "<leader>clp", "<cmd>lprev<CR>", { desc = "Close Local Quick
 vim.keymap.set("n", "<leader>zz", "z=", { desc = "Spell Suggestions", })
 vim.keymap.set("n", "<leader>zn", "]s", { desc = "Next Misspelling", })
 vim.keymap.set("n", "<leader>zp", "[s", { desc = "Previous Misspelling" })
+-- Modify Content --------------------------------------------------------------
+vim.keymap.set("n", "<leader>pf", "gqap", { desc = "Fromat Text" })
+-- Color picker map (<leader>pc) are in the plugin config 
 
 -- LSP -------------------------------------------------------------------------
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Goto Definition", })
@@ -64,7 +67,6 @@ vim.keymap.set("n", "<leader>la", vim.lsp.buf.code_action, { desc = "Code Action
 vim.keymap.set("v", "p", "_dP", { desc = "Paste Without Yanking" })
 
 
-
 -- Insert Mode -----------------------------------------------------------------
 -- vim.keymap.set("i", "<C-c>", "<cmd>PickColorInsert<cr>", opts)
 -- I miss this plug-in 
@@ -75,9 +77,9 @@ vim.keymap.set("v", "p", "_dP", { desc = "Paste Without Yanking" })
 -- vim.keymap.set("n", "<leader>fb", "<cmd>FzfLua buffers<CR>", { desc = "Find Buffers" })
 -- vim.keymap.set("n", "<leader>fr", "<cmd>FzfLua oldfiles<CR>", { desc = "Recent Files" })
 
--- Buffers ---------------------------------------------------------------------
-vim.keymap.set("n", "<S-h>", "<cmd>BufferLineCyclePrev<CR>", { desc = "Previous Buffer", })
-vim.keymap.set("n", "<S-l>", "<cmd>BufferLineCycleNext<CR>", { desc = "Next Buffer" })
+-- buffers ---------------------------------------------------------------------
+-- vim.keymap.set("n", "<S-h>", "<cmd>BufferLineCyclePrev<CR>", { desc = "Previous Buffer", })
+-- vim.keymap.set("n", "<S-l>", "<cmd>BufferLineCycleNext<CR>", { desc = "Next Buffer" })
 
 vim.keymap.set("n", "]h", "<cmd>GitSigns next_hunk<CR>", { desc = "Next Hunk" })
 vim.keymap.set("n", "[h", "<cmd>Gitsigns prev_hunk<CR>", { desc = "Prev Hunk" })

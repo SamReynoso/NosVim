@@ -1,4 +1,3 @@
-
 local M = {}
 
 function M.setup(c)
@@ -11,9 +10,8 @@ function M.setup(c)
 
 
 
-    --
     hl(0, "Normal",         { fg = c.fg, bg = c.bg })
-    hl(0, "Directory",      { fg = c.a4 })
+    hl(0, "Directory",      { fg = c.fz })
     hl(0, "Comment",        { fg = c.comment, italic = true })
 
 --  Statements
@@ -43,26 +41,36 @@ function M.setup(c)
 
 -- Quick hack zone
     hl(0, "netrwDir",     { fg = c.fz})
-    hl(0, "netrwPlain",     { fg = c.c1 })
+    hl(0, "netrwPlain",     { fg = c.netrw})
     hl(0, "Title",          { fg = c.a1, bold = true })
     hl(0, "cssCustomProp", { fg = c.rx })
     hl(0, "Identifier", { fg = c.fg2 })
-    hl(0, "DiagnosticUnnecessary",  { fg = c.a1,  italic = true}) -- links to stirng
 
 
 --  Shell
     hl(0, "shFunctionExpr",         { fg = c.rx })
     hl(0, "shCase",                 { fg = c.fg2 })
+
     hl(0, "shCaseEsac",             { fg = c.a1 })
     hl(0, "shCaseLabel",            { fg = c.fx })
     hl(0, "shVariable",             { link = "Variable"})
 
     -- Diagnostic
-    -- TODO: Add yellow
-    hl(0, "DiagnosticError",    { fg = c.a1 })
-    hl(0, "DiagnosticWarn",     { fg = c.a1 })
-    hl(0, "DiagnosticInfo",     { fg = c.a1 })
-    hl(0, "DiagnosticHint",     { fg = c.a1 })
+    hl(0, "DiagnosticOk",               { fg = c.lz})
+    hl(0, "DiagnosticSignOk",           { fg = c.commnet })
+    hl(0, "DiagnosticSignError",        { fg = c.commnet })
+    hl(0, "DiagnosticSignWarn",         { fg = c.comment })
+    hl(0, "DiagnosticSignHint",         { fg = c.comment })
+    hl(0, "DiagnosticSignInfo",         { fg = c.comment })
+    hl(0, "DiagnosticError",            { fg = c.l1})
+    hl(0, "DiagnosticUnderlineError",   { fg = c.l2 })
+    hl(0, "DiagnosticWarn",             { fg = c.l3 })
+    hl(0, "DiagnosticUnderlineWarn",    { fg = c.l4 })
+    hl(0, "DiagnosticHint",             { fg = c.l5 })
+    hl(0, "DiagnosticUnderlineHint",    { fg = c.l0, bg = c.l6 })
+    hl(0, "DiagnosticUnnecessary",      { fg = c.l0 })
+    hl(0, "DiagnosticInfo",             { fg = c.l0 })
+    hl(0, "DiagnosticUnderlineInfo",    { fg = c.l0 , italic = true, underline = true}) 
 
     -- Vim
     hl(0, "LineNr",         { fg = c.comment })

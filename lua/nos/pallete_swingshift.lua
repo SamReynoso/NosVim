@@ -24,13 +24,25 @@ return {
     c3              = "#dc94ee", -- Boolean
     c4              = "#f9f909", -- Number
     c5              = "#b299f2", -- Constant
+    --
+    l0              = "#ffffff", -- hint
+    lz              = "#00ffff", -- hint
+    l1              = "#a01010", -- underline error
+    l2              = "#ff0000", -- errors
+    l3              = "#ff7700", -- warn 
+    l4              = "#7e3b00", -- underline warn 
+
+    l5              = "#00a000", -- hint
+    l6              = "#333333", -- hint
+
     -- Special
-    a1              = "#ef5a50", -- errors
+    a1              = "#db5449", -- errors
     rx              = "#ec8686", -- classVar, shFunctionExp
     fx              = "#e9e086", -- pythonBuiltin
     fz              = "#70aee5", -- Directory
     a5              = "#9f889f", -- Delimiter
     todo            = "#808000",
+    netrw           = "#c0c0c0",
     comment         = "#808080",
     cursorline      = "#181818",
     selection       = "#292929",

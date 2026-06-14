@@ -1,29 +1,27 @@
+-- 
+-- Incomplete / Wrong
 --
---
---
-
-
 return {
-    bg              = "#0e0606", -- forground
-    fg              = "#cacaff", -- background 
+    bg              = "#0e0606",
+    fg              = "#cacaff",
 --
-    a1              = "#ef5a50", -- errors
-    a2              = "#af88af", -- Operator
+    a1              = "#ef5a50",
+    a2              = "#af88af",
     a3              = "#66cc66",
     a4              = "#93d5ff",
 --
-    n1              = "#86b3ff", -- Variable
-    n2              = "#b6b6ff", -- Keyword
-    n5              = "#d163b5", -- classVar, shFunctionExp
-    n6              = "#99d6b2", -- string
-    n7              = "#ffc6bf", -- Repeat
+    n1              = "#86b3ff",
+    n2              = "#b6b6ff",
+    n5              = "#d163b5",
+    n6              = "#99d6b2",
+    n7              = "#ffc6bf",
 --
-    m2              = "#ffc6ff", -- Statement
-    m3              = "#83bdbf", -- PreProc
-    m4              = "#98c1ff", -- Function, Delimiter
-    m5              = "#ff99e6", -- Conditional
-    m7              = "#6cae8f", -- Character
-    m9              = "#80b38f", -- Number, Boolean, Constant
+    m2              = "#ffc6ff",
+    m3              = "#83bdbf",
+    m4              = "#98c1ff",
+    m5              = "#ff99e6",
+    m7              = "#6cae8f",
+    m9              = "#80b38f",
     comment         = "#9b9b9b",
     cursorline      = "#292929",
     selection       = "#292929",

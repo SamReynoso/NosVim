@@ -47,7 +47,7 @@ require("lazy").setup(
             {
                 import = "core"
             },
-            -- { import = "core-extra" },
+            { import = "core-extra" },
             {
                 import = "ui"
             },
